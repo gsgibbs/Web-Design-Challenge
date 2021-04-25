@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+   <title>Data Visualizations</title>
+
+
+
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+ <body>
+   <!-- Start of navbar -->
+ <div class="navigation">
+   <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+     <a class="navbar-brand" href="index.html">Lattitude</a>
+     <button class="navbar-toggler border" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+       aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+
+     <!-- Collect the nav links, forms, and other content for toggling -->
+     <div class="collapse navbar-collapse" id="navbarNavDropdown">
+       <ul class="navbar-nav ml-auto">
+         <li class="nav-item dropdown">
+           <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownMenuLink"
+             role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+             <a class="dropdown-item" href="temperature.html">Max Temperature</a>
+             <a class="dropdown-item" href="humid.html">Humidity</a>
+             <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+             <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+           </div>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="comparison.html">Comparison</a>
+         </li>
+         <li class="nav-item">
+           <a class="nav-link" href="data.html">Data</a>
+         </li>
+       </ul>
+     </div>
+   </nav>
+ </div>
+  <!-- End of navbar -->
+  <!-- Start of container -->
+  <div class="container">
+    <section class="row">
+      <div>
+        <div class="description-content">
+          <h1 class="description-header">Data</h1>
+          <hr>
+          <p>The following table includes all of the data used for plotting during this project.</p>
+          <br>
+          <div>
+            <table class="dataframe table table-striped">
+              <thead>
+                <tr style="text-align: left;">
+               <th></th>
+               <th>City_ID</th>
+               <th>City</th>
+               <th>Cloudiness</th>
+               <th>Country</th>
+               <th>Date</th>
+               <th>Humidity</th>
+               <th>Lat</th>
+               <th>Lng</th>
+               <th>Max Temp</th>
+               <th>Wind Speed</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
